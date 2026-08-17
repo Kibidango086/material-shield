@@ -1,0 +1,26 @@
+{
+  "name": "material-shield",
+  "version": "0.1.0",
+  "description": "Material You 风格的徽章(badge)与 GitHub Metrics 仪表盘(metrics) SVG 生成服务，可免费部署到 Vercel / Netlify / Cloudflare Workers",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "cf:dev": "wrangler dev",
+    "cf:deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.0",
+    "@material/material-color-utilities": "^0.3.0",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "wrangler": "^3.90.0"
+  }
+}
